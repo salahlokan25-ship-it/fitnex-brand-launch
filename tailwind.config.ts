@@ -93,7 +93,7 @@ export default {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "fade-up": "fadeUp 0.6s ease-out both",
-        "pulse-orange": "pulseOrange 2s ease-in-out infinite",
+        "pulse-blue": "pulseBlue 2.5s ease-in-out infinite",
       },
     },
   },

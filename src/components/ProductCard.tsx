@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ShoppingCart, Star, Eye, Tag } from "lucide-react";
+import { ShoppingCart, Star, Eye } from "lucide-react";
 import type { Product } from "@/data/products";
 
 interface ProductCardProps {
@@ -14,97 +14,98 @@ const ProductCard = ({ product, onQuickView }: ProductCardProps) => {
   );
 
   return (
-    <div className="group card-glass rounded-xl overflow-hidden hover:border-primary/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+    <div className="group card-glass rounded-2xl overflow-hidden hover:border-primary/40 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-primary/10">
       {/* Image */}
-      <div className="relative overflow-hidden bg-muted aspect-square">
+      <div className="relative overflow-hidden bg-muted/50 aspect-square">
         {!imgError ? (
           <img
             src={product.image}
             alt={product.title}
-            className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+            className="w-full h-full object-contain p-5 group-hover:scale-105 transition-transform duration-500 ease-out"
             onError={() => setImgError(true)}
           />
         ) : (
-          <div className="w-full h-full flex items-center justify-center text-muted-foreground text-sm p-4 text-center">
+          <div className="w-full h-full flex items-center justify-center text-muted-foreground text-sm p-4 text-center font-medium">
             {product.title}
           </div>
         )}
 
         {/* Badges */}
-        <div className="absolute top-2 left-2 flex flex-col gap-1">
+        <div className="absolute top-3 left-3 flex flex-col gap-1.5">
           {product.badge && (
-            <span className="bg-primary text-primary-foreground text-[10px] font-bold px-2 py-0.5 rounded-sm tracking-wider">
+            <span className="bg-primary text-primary-foreground text-[10px] font-bold px-2.5 py-1 rounded-md tracking-widest uppercase shadow-lg shadow-primary/30">
               {product.badge}
             </span>
           )}
-          <span className="bg-card/90 backdrop-blur-sm text-primary text-[10px] font-bold px-2 py-0.5 rounded-sm">
+          <span className="bg-background/80 backdrop-blur-sm text-primary text-[10px] font-bold px-2.5 py-1 rounded-md border border-primary/20">
             -{discount}%
           </span>
         </div>
 
-        {/* Quick View */}
-        <button
-          onClick={() => onQuickView(product)}
-          className="absolute bottom-2 left-1/2 -translate-x-1/2 bg-background/90 backdrop-blur-sm text-foreground text-xs font-semibold px-3 py-1.5 rounded-sm flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap"
-        >
-          <Eye className="w-3.5 h-3.5" />
-          Quick View
-        </button>
+        {/* Quick View overlay */}
+        <div className="absolute inset-0 bg-background/60 backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end justify-center pb-4">
+          <button
+            onClick={() => onQuickView(product)}
+            className="bg-primary text-primary-foreground text-xs font-semibold px-5 py-2.5 rounded-lg flex items-center gap-2 shadow-xl translate-y-2 group-hover:translate-y-0 transition-transform duration-300"
+          >
+            <Eye className="w-3.5 h-3.5" />
+            Quick View
+          </button>
+        </div>
       </div>
 
       {/* Info */}
       <div className="p-4">
-        {/* Category */}
-        <div className="flex items-center gap-1.5 mb-2">
-          <Tag className="w-3 h-3 text-primary" />
-          <span className="text-primary text-[10px] font-semibold uppercase tracking-wider">
-            {product.category}
-          </span>
-        </div>
+        {/* Category tag */}
+        <span className="inline-block text-primary text-[10px] font-semibold uppercase tracking-widest mb-2">
+          {product.category}
+        </span>
 
         {/* Title */}
-        <h3 className="text-foreground font-semibold text-sm leading-tight mb-2 line-clamp-2">
+        <h3 className="text-foreground font-semibold text-sm leading-snug mb-2.5 line-clamp-2">
           {product.title}
         </h3>
 
         {/* Stars */}
-        <div className="flex items-center gap-1 mb-3">
-          {[...Array(5)].map((_, i) => (
-            <Star key={i} className="w-3 h-3 text-primary fill-primary" />
-          ))}
-          <span className="text-muted-foreground text-xs ml-1">(128)</span>
+        <div className="flex items-center gap-1.5 mb-3">
+          <div className="flex">
+            {[...Array(5)].map((_, i) => (
+              <Star key={i} className="w-3 h-3 text-primary fill-primary" />
+            ))}
+          </div>
+          <span className="text-muted-foreground text-xs">(128)</span>
         </div>
 
         {/* Colors */}
         {product.colors.length > 0 && (
           <div className="flex items-center gap-1 mb-3 flex-wrap">
-            {product.colors.slice(0, 6).map((color) => (
+            {product.colors.slice(0, 5).map((color) => (
               <span
                 key={color}
-                className="text-[10px] text-muted-foreground border border-border rounded px-1.5 py-0.5 hover:border-primary hover:text-primary cursor-pointer transition-colors"
+                className="text-[10px] text-muted-foreground border border-border rounded-md px-2 py-0.5 hover:border-primary hover:text-primary cursor-pointer transition-colors"
               >
                 {color}
               </span>
             ))}
-            {product.colors.length > 6 && (
-              <span className="text-[10px] text-muted-foreground">
-                +{product.colors.length - 6}
+            {product.colors.length > 5 && (
+              <span className="text-[10px] text-muted-foreground font-medium">
+                +{product.colors.length - 5} more
               </span>
             )}
           </div>
         )}
 
         {/* Price + CTA */}
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mt-1">
           <div>
             <span className="text-primary font-bold text-lg">
               ${product.price.toFixed(2)}
             </span>
-            <span className="text-muted-foreground text-xs line-through ml-2">
+            <span className="text-muted-foreground text-xs line-through ml-1.5">
               ${product.comparePrice.toFixed(2)}
             </span>
           </div>
-          <button className="bg-primary text-primary-foreground rounded-sm px-3 py-2 hover:opacity-90 transition-opacity">
+          <button className="bg-primary text-primary-foreground rounded-xl p-2.5 hover:opacity-90 transition-opacity shadow-md shadow-primary/20">
             <ShoppingCart className="w-4 h-4" />
           </button>
         </div>

@@ -41,7 +41,7 @@ const ProductsSection = () => {
           Our Products
         </span>
         <h2 className="font-display text-6xl sm:text-7xl text-foreground mt-2 mb-4">
-          SHOP THE <span className="text-gradient-orange">COLLECTION</span>
+          SHOP THE <span className="text-gradient-blue">COLLECTION</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
           Premium fitness gear for every workout. All products in stock & ready to ship.

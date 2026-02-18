@@ -71,7 +71,7 @@ const AboutSection = () => {
               Our Story
             </span>
             <h2 className="font-display text-6xl text-foreground mt-2 mb-6">
-              BORN FROM <span className="text-gradient-orange">PASSION</span>
+              BORN FROM <span className="text-gradient-blue">PASSION</span>
             </h2>
             <p className="text-muted-foreground leading-relaxed mb-4">
               Fitnex was built by athletes, for athletes. We know what it's like to
@@ -110,7 +110,7 @@ const AboutSection = () => {
         <div>
           <div className="text-center mb-10">
             <h2 className="font-display text-6xl text-foreground">
-              WHAT ATHLETES <span className="text-gradient-orange">SAY</span>
+              WHAT ATHLETES <span className="text-gradient-blue">SAY</span>
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

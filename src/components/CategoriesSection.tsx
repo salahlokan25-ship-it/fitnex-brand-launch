@@ -6,7 +6,7 @@ const categoryData = [
     icon: Bike,
     count: 3,
     desc: "Jackets, caps & socks for every ride",
-    color: "from-orange-500/20 to-orange-500/5",
+    color: "from-blue-500/20 to-blue-500/5",
   },
   {
     name: "Apparel",
@@ -27,7 +27,7 @@ const categoryData = [
     icon: Package,
     count: 5,
     desc: "Straps, bags & training aids",
-    color: "from-yellow-500/20 to-yellow-500/5",
+    color: "from-sky-500/20 to-sky-500/5",
   },
   {
     name: "Cardio",
@@ -69,7 +69,7 @@ const CategoriesSection = () => {
             Shop by Category
           </span>
           <h2 className="font-display text-6xl sm:text-7xl text-foreground mt-2">
-            FIND YOUR <span className="text-gradient-orange">GEAR</span>
+            FIND YOUR <span className="text-gradient-blue">GEAR</span>
           </h2>
         </div>
 
