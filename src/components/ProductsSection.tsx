@@ -35,7 +35,7 @@ const ProductsSection = () => {
   const displayed = showAll ? filtered : filtered.slice(0, 12);
 
   return (
-    <section id="shop" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+    <section id="shop" className="py-8 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
       {/* Video Hero Banner */}
       <div className="relative rounded-2xl overflow-hidden mb-16 border border-primary/20 shadow-2xl glow-blue">
         {/* Aspect ratio container */}

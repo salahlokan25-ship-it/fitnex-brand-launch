@@ -1,4 +1,5 @@
 import { Zap, Instagram, Facebook, Twitter, Mail, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -16,13 +17,13 @@ const Footer = () => {
           <p className="text-muted-foreground mb-8 max-w-md mx-auto">
             Join 50,000+ athletes who train smarter with Fitnex gear.
           </p>
-          <a
-            href="#shop"
+          <Link
+            to="/shop"
             className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold text-base hover:opacity-90 transition-opacity shadow-xl shadow-primary/30 pulse-blue"
           >
             Shop Now — Free Shipping
             <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -57,9 +58,16 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4 text-sm tracking-wide">Shop</h4>
             <ul className="space-y-2.5 text-sm text-muted-foreground">
-              {["All Products", "Cycling Gear", "Apparel", "Equipment", "Accessories", "Sale"].map((l) => (
-                <li key={l}>
-                  <a href="#shop" className="hover:text-primary transition-colors">{l}</a>
+              {[
+                { label: "All Products", to: "/shop" },
+                { label: "Cycling Gear", to: "/categories" },
+                { label: "Apparel", to: "/categories" },
+                { label: "Equipment", to: "/categories" },
+                { label: "Accessories", to: "/categories" },
+                { label: "Sale", to: "/shop" },
+              ].map((l) => (
+                <li key={l.label}>
+                  <Link to={l.to} className="hover:text-primary transition-colors">{l.label}</Link>
                 </li>
               ))}
             </ul>
