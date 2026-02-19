@@ -1,4 +1,5 @@
 import { Truck, RotateCcw, Shield, Headphones } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const features = [
   {
@@ -82,12 +83,12 @@ const AboutSection = () => {
               From cycling jackets that conquer any weather to resistance bands that
               grow with your strength — Fitnex gear is your competitive edge.
             </p>
-            <a
-              href="#shop"
+            <Link
+              to="/shop"
               className="inline-block mt-6 bg-primary text-primary-foreground px-6 py-3 rounded-sm font-bold hover:opacity-90 transition-opacity"
             >
               Shop Our Collection
-            </a>
+            </Link>
           </div>
 
           {/* Stats grid */}

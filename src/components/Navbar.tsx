@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ShoppingBag } from "lucide-react";
+import { Link, useLocation } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20);
@@ -11,12 +13,21 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
+
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "Shop", href: "#shop" },
-    { label: "Categories", href: "#categories" },
-    { label: "About", href: "#about" },
+    { label: "Home", to: "/" },
+    { label: "Shop", to: "/shop" },
+    { label: "Categories", to: "/categories" },
+    { label: "App", to: "/app" },
+    { label: "About", to: "/about" },
   ];
+
+  const isActive = (to: string) =>
+    to === "/" ? location.pathname === "/" : location.pathname.startsWith(to);
 
   return (
     <nav
@@ -29,40 +40,42 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-2.5 group">
+          <Link to="/" className="flex items-center gap-2.5 group">
             <div className="relative w-8 h-8">
               <div className="absolute inset-0 bg-primary/30 rounded-lg blur-sm group-hover:bg-primary/50 transition-colors" />
               <div className="relative w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-display text-sm font-bold tracking-tight">FX</span>
               </div>
             </div>
-            <span className="font-display text-xl tracking-tight text-foreground">
-              FITNEX
-            </span>
-          </a>
+            <span className="font-display text-xl tracking-tight text-foreground">FITNEX</span>
+          </Link>
 
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
-                className="text-sm font-medium text-muted-foreground hover:text-foreground px-4 py-2 rounded-lg hover:bg-muted/50 transition-all duration-200"
+                to={link.to}
+                className={`text-sm font-medium px-4 py-2 rounded-lg transition-all duration-200 ${
+                  isActive(link.to)
+                    ? "text-primary bg-primary/10"
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* CTA */}
           <div className="hidden md:flex items-center gap-3">
-            <a
-              href="#shop"
+            <Link
+              to="/shop"
               className="flex items-center gap-2 bg-primary text-primary-foreground px-5 py-2.5 rounded-lg text-sm font-semibold hover:opacity-90 transition-all duration-200 shadow-lg shadow-primary/25"
             >
               <ShoppingBag className="w-4 h-4" />
               Shop Now
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Toggle */}
@@ -80,22 +93,26 @@ const Navbar = () => {
         <div className="md:hidden bg-card/95 backdrop-blur-xl border-b border-border">
           <div className="px-4 py-4 flex flex-col gap-1">
             {navLinks.map((link) => (
-              <a
+              <Link
                 key={link.label}
-                href={link.href}
+                to={link.to}
                 onClick={() => setIsOpen(false)}
-                className="text-foreground font-medium py-3 px-4 rounded-lg hover:bg-muted transition-colors"
+                className={`font-medium py-3 px-4 rounded-lg transition-colors ${
+                  isActive(link.to)
+                    ? "text-primary bg-primary/10"
+                    : "text-foreground hover:bg-muted"
+                }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
-            <a
-              href="#shop"
+            <Link
+              to="/shop"
               onClick={() => setIsOpen(false)}
               className="bg-primary text-primary-foreground px-4 py-3 rounded-lg font-semibold text-center mt-2"
             >
               Shop Now
-            </a>
+            </Link>
           </div>
         </div>
       )}

@@ -6,18 +6,17 @@ import FitnesCal from "@/components/FitnesCal";
 import AboutSection from "@/components/AboutSection";
 import Footer from "@/components/Footer";
 
-const Index = () => {
-  return (
-    <div className="min-h-screen bg-background text-foreground">
-      <Navbar />
-      <HeroSection />
-      <CategoriesSection />
-      <ProductsSection />
-      <FitnesCal />
-      <AboutSection />
-      <Footer />
-    </div>
-  );
-};
+// Legacy single-page index — now replaced by multi-page routing
+const Index = () => (
+  <div className="min-h-screen bg-background text-foreground">
+    <Navbar />
+    <HeroSection />
+    <CategoriesSection />
+    <ProductsSection />
+    <FitnesCal />
+    <AboutSection />
+    <Footer />
+  </div>
+);
 
 export default Index;

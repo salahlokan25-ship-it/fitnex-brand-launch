@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, Star, TrendingUp, Shield, Zap, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import fitnexHero from "@/assets/fitnex-hero.gif";
 
 const stats = [
@@ -78,19 +79,19 @@ const HeroSection = () => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-10">
-              <a
-                href="#shop"
+              <Link
+                to="/shop"
                 className="group flex items-center justify-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-base tracking-wide hover:opacity-95 transition-all duration-200 pulse-blue"
               >
                 Shop Now
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </a>
-              <a
-                href="#categories"
+              </Link>
+              <Link
+                to="/categories"
                 className="flex items-center justify-center border border-border/60 text-foreground/80 px-8 py-4 rounded-lg font-medium text-base hover:border-primary/50 hover:text-primary hover:bg-primary/5 transition-all duration-200"
               >
                 Browse Categories
-              </a>
+              </Link>
             </div>
 
             {/* Social proof */}
