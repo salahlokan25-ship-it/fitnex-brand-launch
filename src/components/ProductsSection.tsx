@@ -1,9 +1,10 @@
 import { useState } from "react";
-import { Search, SlidersHorizontal } from "lucide-react";
+import { Search, SlidersHorizontal, Play } from "lucide-react";
 import { products, categories } from "@/data/products";
 import ProductCard from "./ProductCard";
 import QuickViewModal from "./QuickViewModal";
 import type { Product } from "@/data/products";
+import shopVideo from "@/assets/fitnex-shop.mp4";
 
 const ProductsSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -35,17 +36,46 @@ const ProductsSection = () => {
 
   return (
     <section id="shop" className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-      {/* Header */}
-      <div className="text-center mb-12 animate-fade-up">
-        <span className="text-primary text-sm font-semibold uppercase tracking-widest">
-          Our Products
-        </span>
-        <h2 className="font-display text-6xl sm:text-7xl text-foreground mt-2 mb-4">
-          SHOP THE <span className="text-gradient-blue">COLLECTION</span>
-        </h2>
-        <p className="text-muted-foreground max-w-xl mx-auto">
-          Premium fitness gear for every workout. All products in stock & ready to ship.
-        </p>
+      {/* Video Hero Banner */}
+      <div className="relative rounded-2xl overflow-hidden mb-16 border border-primary/20 shadow-2xl glow-blue">
+        {/* Aspect ratio container */}
+        <div className="relative" style={{ aspectRatio: "21/6" }}>
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="w-full h-full object-cover"
+            style={{ objectPosition: "center 30%" }}
+          >
+            <source src={shopVideo} type="video/mp4" />
+          </video>
+          {/* Bottom gradient mask to hide Veo watermark */}
+          <div
+            className="absolute bottom-0 left-0 right-0 h-16 z-10"
+            style={{ background: "linear-gradient(to top, hsl(220 20% 5%) 40%, transparent 100%)" }}
+          />
+          {/* Left gradient for text readability */}
+          <div
+            className="absolute inset-0 z-10"
+            style={{ background: "linear-gradient(to right, hsl(220 20% 5% / 0.7) 0%, transparent 60%)" }}
+          />
+          {/* Text overlay */}
+          <div className="absolute inset-0 z-20 flex items-center px-8 sm:px-14">
+            <div>
+              <span className="text-primary text-xs font-bold tracking-widest uppercase mb-2 block">
+                Premium Collection
+              </span>
+              <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-foreground leading-none tracking-tight">
+                SHOP THE{" "}
+                <span className="text-gradient-blue">COLLECTION</span>
+              </h2>
+              <p className="text-foreground/70 text-sm sm:text-base mt-3 max-w-sm font-light">
+                Elite gear engineered for athletes who refuse to settle.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
       {/* Filters */}
