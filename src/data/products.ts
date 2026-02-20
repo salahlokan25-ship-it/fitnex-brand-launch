@@ -1,3 +1,32 @@
+import imgCyclingJacket from "@/assets/products/cycling-jacket.jpg";
+import imgWristAnkleWeights from "@/assets/products/wrist-ankle-weights.jpg";
+import imgWeightedJumpRope from "@/assets/products/weighted-jump-rope.jpg";
+import imgVintageCyclingCap from "@/assets/products/vintage-cycling-cap.jpg";
+import imgCyclingJacketPro from "@/assets/products/cycling-jacket-pro.jpg";
+import imgPushUpBoard from "@/assets/products/push-up-board.jpg";
+import imgCompressionTank from "@/assets/products/compression-tank.jpg";
+import imgThermoSculpt from "@/assets/products/thermo-sculpt.jpg";
+import imgSweatSculpt from "@/assets/products/sweat-sculpt.jpg";
+import imgStormproofJacket from "@/assets/products/stormproof-jacket.jpg";
+import imgAbsStimulator from "@/assets/products/abs-stimulator.jpg";
+import imgSculptLeggings from "@/assets/products/sculpt-leggings.jpg";
+import imgResistanceBandsSet from "@/assets/products/resistance-bands-set.jpg";
+import imgGymPants from "@/assets/products/gym-pants.jpg";
+import imgYogaMat from "@/assets/products/yoga-mat.jpg";
+import imgLiftingStraps from "@/assets/products/lifting-straps.jpg";
+import imgPowergripForearm from "@/assets/products/powergrip-forearm.jpg";
+import imgRunningShirt from "@/assets/products/running-shirt.jpg";
+import imgCompressionBaseLayer from "@/assets/products/compression-base-layer.jpg";
+import imgYogaCropTank from "@/assets/products/yoga-crop-tank.jpg";
+import imgGymShorts from "@/assets/products/gym-shorts.jpg";
+import imgSportsBra from "@/assets/products/sports-bra.jpg";
+import imgCyclingSocks from "@/assets/products/cycling-socks.jpg";
+import imgResistanceLoopBands from "@/assets/products/resistance-loop-bands.jpg";
+import imgRunningShoes from "@/assets/products/running-shoes.jpg";
+import imgGripSocks from "@/assets/products/grip-socks.jpg";
+import imgAnkleStraps from "@/assets/products/ankle-straps.jpg";
+import imgDryBag from "@/assets/products/dry-bag.jpg";
+
 export interface Product {
   id: string;
   title: string;
@@ -18,12 +47,8 @@ export const products: Product[] = [
     title: "Storm Shield Cycling Jacket — Ride Through Anything",
     price: 29.99,
     comparePrice: 49.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/https_3A_2F_2Ffkdst7-up.myshopify.com_2Fcdn_2Fshop_2Ffiles_2FCaptured_ecran2025-04-12153647.jpg?v=1755623406",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/https_3A_2F_2Ffkdst7-up.myshopify.com_2Fcdn_2Fshop_2Ffiles_2FCaptured_ecran2025-04-12153647.jpg?v=1755623406",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/https_3A_2F_2Ffkdst7-up.myshopify.com_2Fcdn_2Fshop_2Ffiles_2FCaptured_ecran2025-04-12153637.jpg?v=1755623406",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/https_3A_2F_2Ffkdst7-up.myshopify.com_2Fcdn_2Fshop_2Ffiles_2FCaptured_ecran2025-04-12153548.jpg?v=1755623406",
-    ],
+    image: imgCyclingJacket,
+    images: [imgCyclingJacket],
     colors: ["White", "Orange", "Green", "Black", "Yellow"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "Cycling",
@@ -35,12 +60,8 @@ export const products: Product[] = [
     title: "Precision Load Wrist & Ankle Weights — Build More. Everywhere.",
     price: 29.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_230950-removebg-preview.png?v=1755443128",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_230950-removebg-preview.png?v=1755443128",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-20231014.png?v=1755443128",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-20231002.png?v=1755443128",
-    ],
+    image: imgWristAnkleWeights,
+    images: [imgWristAnkleWeights],
     colors: ["Black"],
     category: "Accessories",
     description: "Every walk, run or stretch becomes a real workout. Adjustable resistance wraps securely around wrists or ankles — burn more calories without changing your routine. Turn ordinary movement into extraordinary results.",
@@ -50,12 +71,8 @@ export const products: Product[] = [
     title: "PowerBurn Jump Rope — 1,000 Calories Won't Know What Hit Them",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_131527-removebg-preview.png?v=1755443127",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_131527-removebg-preview.png?v=1755443127",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12131538.png?v=1755443127",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12131602.png?v=1755443127",
-    ],
+    image: imgWeightedJumpRope,
+    images: [imgWeightedJumpRope],
     colors: ["Pink", "Gray"],
     category: "Cardio",
     description: "Torch fat faster than a treadmill session in half the time. The weighted handles intensify every jump, building stamina, coordination and lean muscle simultaneously. 15 minutes. Real results. No gym needed.",
@@ -66,12 +83,8 @@ export const products: Product[] = [
     title: "Retro Rider Cap — Classic Style, Pro-Level Performance",
     price: 14.99,
     comparePrice: 24.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_160405-removebg-preview.png?v=1755443126",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_160405-removebg-preview.png?v=1755443126",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12160545.png?v=1755443125",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12160526.png?v=1755443126",
-    ],
+    image: imgVintageCyclingCap,
+    images: [imgVintageCyclingCap],
     colors: ["Orange", "White", "Blue", "Yellow"],
     category: "Cycling",
     description: "Built for riders who refuse to look ordinary. Breathable moisture-wicking fabric shields you from glare while the iconic retro silhouette turns heads on every climb. Look fast. Ride faster.",
@@ -81,12 +94,8 @@ export const products: Product[] = [
     title: "AeroShield Pro Jacket — Wind Stops Here",
     price: 29.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_153601-removebg-preview.png?v=1755443124",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_153601-removebg-preview.png?v=1755443124",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12153703.png?v=1755443124",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12153647.png?v=1755443125",
-    ],
+    image: imgCyclingJacketPro,
+    images: [imgCyclingJacketPro],
     colors: ["White", "Orange", "Yellow", "Green"],
     sizes: ["S", "M", "L", "XL", "2XL", "3XL"],
     category: "Cycling",
@@ -97,12 +106,8 @@ export const products: Product[] = [
     title: "BodyForge 12-in-1 Push-Up Board — Your Home Gym in One Board",
     price: 24.99,
     comparePrice: 34.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-21_235214-removebg-preview.png?v=1755443123",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-21_235214-removebg-preview.png?v=1755443123",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-21235133.png?v=1755443123",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-21235112.png?v=1755443123",
-    ],
+    image: imgPushUpBoard,
+    images: [imgPushUpBoard],
     colors: ["Multi"],
     category: "Equipment",
     description: "Cancel your gym membership. 12 targeted positions sculpt your chest, shoulders, triceps and core from a single foldable board. Full-body transformation in 15 minutes a day — from living room to lean machine.",
@@ -113,11 +118,8 @@ export const products: Product[] = [
     title: "IceFlex Compression Tank — Stay Ice-Cold. Train Harder.",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_223731-removebg-preview.png?v=1755443122",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_223731-removebg-preview.png?v=1755443122",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-19223820.png?v=1755443122",
-    ],
+    image: imgCompressionTank,
+    images: [imgCompressionTank],
     colors: ["Black", "Green", "Navy", "White", "Blue"],
     sizes: ["S", "M", "L", "XL", "2XL"],
     category: "Apparel",
@@ -128,11 +130,8 @@ export const products: Product[] = [
     title: "ThermoSculpt Waist Trainer — Sweat More. Shrink Faster.",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_232059-removebg-preview.png?v=1755443121",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_232059-removebg-preview.png?v=1755443121",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-19232119.png?v=1755443120",
-    ],
+    image: imgThermoSculpt,
+    images: [imgThermoSculpt],
     sizes: ["S", "M", "L", "XL", "XXL", "XXXL"],
     colors: ["Black"],
     category: "Body Shapers",
@@ -143,11 +142,8 @@ export const products: Product[] = [
     title: "SweatSculpt Waist Belt — Melt the Stubborn. Own Your Core.",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_230643-removebg-preview.png?v=1755443119",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-19_230643-removebg-preview.png?v=1755443119",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-19230659.png?v=1755443120",
-    ],
+    image: imgSweatSculpt,
+    images: [imgSweatSculpt],
     sizes: ["S", "M", "L"],
     colors: ["Green", "Pink"],
     category: "Body Shapers",
@@ -158,11 +154,8 @@ export const products: Product[] = [
     title: "StormForce Training Jacket — Trained for the Worst. Built for the Best.",
     price: 29.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_162609-removebg-preview.png?v=1755443118",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_162609-removebg-preview.png?v=1755443118",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12162632.png?v=1755443119",
-    ],
+    image: imgStormproofJacket,
+    images: [imgStormproofJacket],
     colors: ["Blue", "Beige", "Gray"],
     sizes: ["L", "XL", "2XL", "3XL", "4XL", "5XL"],
     category: "Apparel",
@@ -174,11 +167,8 @@ export const products: Product[] = [
     title: "PulseCore EMS Abs Stimulator — Six-Pack Science, Zero Crunches",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_122119-removebg-preview.png?v=1755443116",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_122119-removebg-preview.png?v=1755443116",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_122135.png?v=1755443117",
-    ],
+    image: imgAbsStimulator,
+    images: [imgAbsStimulator],
     colors: ["Black"],
     category: "Electronics",
     description: "EMS technology sends targeted electrical pulses directly to your abdominal muscles — activating and toning them while you work, rest or recover. Wireless, rechargeable, 6 intensity levels. Your core, upgraded.",
@@ -188,12 +178,8 @@ export const products: Product[] = [
     title: "ContourFit Sculpt Leggings — Hug Your Curves. Own the Room.",
     price: 29.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_135904-removebg-preview.png?v=1755443116",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_135904-removebg-preview.png?v=1755443116",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12135642.png?v=1755443116",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12140055.png?v=1755443116",
-    ],
+    image: imgSculptLeggings,
+    images: [imgSculptLeggings],
     colors: ["Gray", "Green", "Black", "Beige", "Red"],
     sizes: ["S", "M", "L", "XL"],
     category: "Apparel",
@@ -205,12 +191,8 @@ export const products: Product[] = [
     title: "FlexForce Resistance Bands — Your Entire Gym Fits in Your Bag",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_112135-removebg-preview.png?v=1755443114",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_112135-removebg-preview.png?v=1755443114",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12113511-Photoroom.jpg?v=1755443115",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12113451-Photoroom.jpg?v=1755443115",
-    ],
+    image: imgResistanceBandsSet,
+    images: [imgResistanceBandsSet],
     colors: ["Green", "Yellow", "Multicolor"],
     category: "Equipment",
     description: "Hotel room. Backyard. Living room floor. Wherever you are, this is your gym. Progressive resistance from gentle warm-up to full-on beast mode — build real strength with zero machines, zero membership fees.",
@@ -220,11 +202,8 @@ export const products: Product[] = [
     title: "FlexPro Training Pants — Move Without Limits. Look Unstoppable.",
     price: 29.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_162205-removebg-preview.png?v=1755443114",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_162205-removebg-preview.png?v=1755443114",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12162142.png?v=1755443114",
-    ],
+    image: imgGymPants,
+    images: [imgGymPants],
     colors: ["Green", "Black"],
     sizes: ["XL"],
     category: "Apparel",
@@ -235,12 +214,8 @@ export const products: Product[] = [
     title: "ZenGrip Pro Mat — Your Foundation for Every Breakthrough",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_124144-removebg-preview.png?v=1755443112",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_124144-removebg-preview.png?v=1755443112",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12124708.png?v=1755443112",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12124653.png?v=1755443113",
-    ],
+    image: imgYogaMat,
+    images: [imgYogaMat],
     colors: ["Blue", "Pink", "Black"],
     category: "Equipment",
     description: "Slip-free. Pain-free. Distraction-free. Extra-thick cushioning absorbs every impact while the textured non-slip surface locks you in — whether you're deep in warrior pose or grinding out burpees. Pure focus, pure results.",
@@ -250,12 +225,8 @@ export const products: Product[] = [
     title: "IronGrip Lifting Straps — Never Drop Another PR",
     price: 9.99,
     comparePrice: 14.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-22_231854-removebg-preview.png?v=1755443111",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-22_231854-removebg-preview.png?v=1755443111",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231940.png?v=1755443111",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231921.png?v=1755443111",
-    ],
+    image: imgLiftingStraps,
+    images: [imgLiftingStraps],
     colors: ["Blue", "Red", "Black", "Camouflage", "Pink", "Green"],
     category: "Accessories",
     description: "Your grip is the only thing holding you back from your next personal record. Heavy-duty cotton weave wraps your wrists in ironclad security — deadlifts, rows, shrugs. Pull heavier. Break records. No limits.",
@@ -265,10 +236,8 @@ export const products: Product[] = [
     title: "GripCrusher Forearm Trainer — Unlock the Strength Everyone Can See",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_132346-removebg-preview.png?v=1755443110",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_132346-removebg-preview.png?v=1755443110",
-    ],
+    image: imgPowergripForearm,
+    images: [imgPowergripForearm],
     colors: ["Black"],
     category: "Accessories",
     description: "Forearms and grip strength are the foundation of every elite athlete. Progressive resistance builds crushing power in your hands, wrists and forearms — turning your weakest link into your most powerful weapon.",
@@ -278,11 +247,8 @@ export const products: Product[] = [
     title: "AirFlow Running Shirt — So Light, You'll Forget You're Wearing It",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_161403-removebg-preview.png?v=1755443109",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_161403-removebg-preview.png?v=1755443109",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12161339.png?v=1755443109",
-    ],
+    image: imgRunningShirt,
+    images: [imgRunningShirt],
     colors: ["Gray", "Green", "Black", "White", "Navy"],
     sizes: ["M", "L", "XL", "2XL", "3XL", "4XL"],
     category: "Apparel",
@@ -293,10 +259,8 @@ export const products: Product[] = [
     title: "EliteForce Compression Base Layer — Dominate Every Rep. Every Set.",
     price: 29.99,
     comparePrice: 49.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_153601-removebg-preview.png?v=1755443124",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_153601-removebg-preview.png?v=1755443124",
-    ],
+    image: imgCompressionBaseLayer,
+    images: [imgCompressionBaseLayer],
     colors: ["Black", "Red", "Blue", "White"],
     sizes: ["M", "L", "XL", "2XL", "3XL"],
     category: "Apparel",
@@ -308,10 +272,8 @@ export const products: Product[] = [
     title: "FlowFlex Backless Crop Tank — Move Beautifully. Feel Unstoppable.",
     price: 24.99,
     comparePrice: 39.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_134311-removebg-preview.png?v=1755443101",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_134311-removebg-preview.png?v=1755443101",
-    ],
+    image: imgYogaCropTank,
+    images: [imgYogaCropTank],
     colors: ["Gray", "Pink"],
     category: "Apparel",
     description: "The tank that moves with your body, not against it. Built-in padded support, an open back for maximum breathability and a flattering crop length — perfect for yoga, pilates, or anything that demands confidence.",
@@ -321,11 +283,8 @@ export const products: Product[] = [
     title: "DualFlex 2-in-1 Gym Shorts — The Last Shorts You'll Ever Need",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_142202-removebg-preview.png?v=1755443098",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_142202-removebg-preview.png?v=1755443098",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-12142147.png?v=1755443099",
-    ],
+    image: imgGymShorts,
+    images: [imgGymShorts],
     colors: ["Black", "Red", "Green", "White"],
     sizes: ["M", "L", "XL", "2XL", "3XL"],
     category: "Apparel",
@@ -336,11 +295,8 @@ export const products: Product[] = [
     title: "Freedom Flex Sports Bra — Maximum Support. Zero Compromise.",
     price: 19.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_134311-removebg-preview.png?v=1755443101",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-20_134311-removebg-preview.png?v=1755443101",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-20133738.png?v=1755443101",
-    ],
+    image: imgSportsBra,
+    images: [imgSportsBra],
     colors: ["Black", "Beige", "Blue", "Gray", "Purple", "Pink", "White"],
     sizes: ["S", "M", "L", "XL", "XXL", "XXXL", "XXXXL", "XXXXXL"],
     category: "Apparel",
@@ -352,10 +308,8 @@ export const products: Product[] = [
     title: "PedalPro Cycling Socks 4-Pack — Your Feet Will Thank You at Mile 50",
     price: 12.99,
     comparePrice: 19.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231244.png?v=1755443103",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231244.png?v=1755443103",
-    ],
+    image: imgCyclingSocks,
+    images: [imgCyclingSocks],
     colors: ["Black", "White", "Green", "Orange"],
     category: "Cycling",
     description: "Every serious ride deserves serious socks. Arch compression reduces fatigue on long hauls while moisture-wicking fibers prevent the dreaded hot-spot blister. Four pairs — one for every condition you ride in.",
@@ -365,10 +319,8 @@ export const products: Product[] = [
     title: "BandForce 5-Level Loop Bands — Progressive Strength, Anywhere",
     price: 16.99,
     comparePrice: 24.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_112135-removebg-preview.png?v=1755443114",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_112135-removebg-preview.png?v=1755443114",
-    ],
+    image: imgResistanceLoopBands,
+    images: [imgResistanceLoopBands],
     colors: ["Green", "Blue", "Red", "Black"],
     category: "Equipment",
     description: "One set to take you from rehab to record-breaking. Five color-coded resistance levels guide your progression from light activation to heavy muscle building — glutes, legs, arms, back. Total body. Total control.",
@@ -378,10 +330,8 @@ export const products: Product[] = [
     title: "CloudStrike Running Shoes — Every Step. Cushioned. Powerful. Yours.",
     price: 49.99,
     comparePrice: 79.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231204.png?v=1755443104",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231204.png?v=1755443104",
-    ],
+    image: imgRunningShoes,
+    images: [imgRunningShoes],
     colors: ["Orange", "Red", "Black", "Purple", "White", "Blue"],
     sizes: ["36", "37", "38", "39", "40", "41", "42", "43", "44", "45", "46", "47"],
     category: "Footwear",
@@ -393,11 +343,8 @@ export const products: Product[] = [
     title: "GripMaxx Non-Slip Socks — Never Slip Again. Train with Total Confidence.",
     price: 9.99,
     comparePrice: 14.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231304.png?v=1755443104",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231304.png?v=1755443104",
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231254.png?v=1755443104",
-    ],
+    image: imgGripSocks,
+    images: [imgGripSocks],
     colors: ["Striped", "Purple", "Green", "Gray", "Beige", "Orange", "Blue", "Black", "Pink", "White"],
     category: "Accessories",
     description: "One bad slip can end your whole session. GripMaxx silicone sole pads create an invisible anchor between you and any surface — yoga studio, pilates reformer or gym floor. Stability, style and serious performance.",
@@ -407,10 +354,8 @@ export const products: Product[] = [
     title: "IronFlex Ankle Straps — Sculpt the Lower Body You've Always Wanted",
     price: 14.99,
     comparePrice: 24.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_135904-removebg-preview.png?v=1755443116",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Capture_d_ecran_2025-04-12_135904-removebg-preview.png?v=1755443116",
-    ],
+    image: imgAnkleStraps,
+    images: [imgAnkleStraps],
     colors: ["Black", "Red", "Purple", "Pink", "Blue"],
     category: "Accessories",
     description: "Cable machine meets lower body perfection. Heavy-duty D-ring attachment locks onto any cable system for glute kickbacks, leg raises and hip abductions that actually isolate the muscles you want to sculpt. Attach. Lift. Transform.",
@@ -420,10 +365,8 @@ export const products: Product[] = [
     title: "AquaVault Dry Bag — Waterproof. Rugged. Built for Real Adventures.",
     price: 17.99,
     comparePrice: 29.99,
-    image: "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231304.png?v=1755443104",
-    images: [
-      "https://cdn.shopify.com/s/files/1/0613/4490/7367/files/Captured_ecran2025-04-22231304.png?v=1755443104",
-    ],
+    image: imgDryBag,
+    images: [imgDryBag],
     colors: ["Purple", "Gray", "Black", "Orange"],
     category: "Accessories",
     description: "Your phone, keys and wallet are not waterproof. Your bag should be. Military-grade dry sealing keeps everything 100% dry through kayaking, beach runs, hiking in rain or any adventure life throws at you. Bring everything. Fear nothing.",
