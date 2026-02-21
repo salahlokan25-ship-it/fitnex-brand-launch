@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { ChevronDown, Star, TrendingUp, Shield, Zap, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import fitnexHero from "@/assets/fitnex-hero.gif";
+import ShaderBackground from "@/components/ShaderBackground";
 
 const stats = [
   { value: "50K+", label: "Happy Athletes" },
@@ -23,21 +24,9 @@ const HeroSection = () => {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-16"
     >
-      {/* Animated Background */}
+      {/* Shader Background */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-background" />
-        {/* Blue glow blobs */}
-        <div className="absolute top-1/4 right-1/4 w-[500px] h-[500px] bg-primary/8 rounded-full blur-[120px]" />
-        <div className="absolute bottom-1/3 left-1/5 w-[350px] h-[350px] bg-primary/5 rounded-full blur-[100px]" />
-        {/* Grid lines */}
-        <div
-          className="absolute inset-0 opacity-[0.03]"
-          style={{
-            backgroundImage:
-              "linear-gradient(hsl(214 100% 55%) 1px, transparent 1px), linear-gradient(90deg, hsl(214 100% 55%) 1px, transparent 1px)",
-            backgroundSize: "60px 60px",
-          }}
-        />
+        <ShaderBackground />
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
