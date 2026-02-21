@@ -45,6 +45,21 @@ const HeroSection = () => {
               </span>
             </div>
 
+            {/* Headline */}
+            <h1 className="font-display leading-[0.9] mb-6 tracking-tight">
+              <span className="block text-7xl sm:text-8xl lg:text-[7rem] text-foreground">
+                TRAIN
+              </span>
+              <span className="block text-7xl sm:text-8xl lg:text-[7rem] text-gradient-blue">
+                HARDER.
+              </span>
+              <span className="block text-7xl sm:text-8xl lg:text-[7rem] text-foreground">
+                PERFORM
+              </span>
+              <span className="block text-7xl sm:text-8xl lg:text-[7rem] text-gradient-blue-white">
+                BETTER.
+              </span>
+            </h1>
 
             <p className="text-muted-foreground text-base sm:text-lg max-w-md mx-auto lg:mx-0 mb-8 leading-relaxed font-light">
               Elite fitness gear engineered for athletes who refuse to settle.
